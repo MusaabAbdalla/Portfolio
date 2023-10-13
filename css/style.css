@@ -388,12 +388,12 @@ footer i{
     .personal-info{
         background-color: var(--persian-green);
         position:absolute;
-        max-width: 60%;
+        max-width: 80%;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         top:80%;
-        left:20%;
+        left:10%;
         /* border: 0.1px solid var(--black); */
         border-radius: 8px;
         /* gap:16px; */
