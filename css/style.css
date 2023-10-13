@@ -44,7 +44,7 @@ a {
 }
 header{
     max-width: 100%;
-    background-color: var(--prussian-blue);
+    background-color: var(--white);
     position: sticky;
     top: 0px;
     box-shadow: 0px 0px 16px rgba(0,48,73,1);
@@ -57,10 +57,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background:var(--prussian-blue);
+    background:var(--white);
     padding: 16px 0px;
     top:0px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .active{
@@ -71,7 +71,7 @@ header{
 nav{
     position: absolute;
     /* width: 100%; */
-    background: var(--prussian-blue);
+    background: var(--white);
 }
 
 nav,
@@ -88,7 +88,7 @@ nav a {
     transition: all 0.3s ease 0s;
 }
 nav a:hover{
-    color: var(--fire-engine-red);
+    color: var(--bittersweet);
 }
 #menu-checkbox-icons{
     font-size: 42px;
@@ -187,22 +187,29 @@ nav a:hover{
 }
 
 .personal-info{
+    background-color: var(--persian-green);
     position:absolute;
-    max-width: 60%;
-    background-color: var(--white);
+    max-width: 90%;
     display:flex;
+    flex-direction:column;
+    justify-content: space-between;
     top:80%;
-    left:20%;
-    border: 0.1px solid var(--black);
+    left:5%;
+    /* border: 0.1px solid var(--black); */
     border-radius: 8px;
+    gap:16px;
 }
 .personal-info-card{
+    width:100%;
     padding: 64px 16px;
-    height: 900px;
+    height: 700px;
     display: flex;
     gap: 32px;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 8px rgba(0,48,73,1);
+    border: 0.1px solid var(--black);
+    background-color: var(--white);
 
 
 }
@@ -241,12 +248,13 @@ nav a:hover{
 }
 
 .third-section{
-    margin-top:900px;
+    margin-top:2100px;
 }
 
 .project-list{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 
 }
@@ -254,13 +262,17 @@ nav a:hover{
     width:600px;
     display:flex;
     flex-direction: column;
-    border: 0.1px solid var(--orange-web);
+    /* border: 0.1px solid var(--black); */
     border-radius: 24px;
+    box-shadow: 0px 0px 8px rgba(0,48,73,1);
+    gap:64px;
 
 }
 .project-card-image-container img{
     width:100%;
     border-radius: 24px 24px 0 0 ;
+    /* border: 1px solid var(--black); */
+    box-shadow: 0px 0px 8px rgba(0,48,73,1);
 }
 
 .project-card-text{
@@ -323,7 +335,6 @@ footer i{
 
 
 
-
 /************* MEDIA-QUERY **************/
 
 
@@ -373,7 +384,41 @@ footer i{
     }
 
 
+
+    .personal-info{
+        background-color: var(--persian-green);
+        position:absolute;
+        max-width: 60%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top:80%;
+        left:20%;
+        /* border: 0.1px solid var(--black); */
+        border-radius: 8px;
+        /* gap:16px; */
+    }
+    .personal-info-card{
+        width:32%;
+        padding: 64px 16px;
+        height: 900px;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 8px rgba(0,48,73,1);
+        border: 0.1px solid var(--black);
+        background-color: var(--white);
+
+
+    }
+    .third-section{
+        margin-top:900px;
+    }
+
 }
+
+
 @media (min-width:1200px){
 
 
@@ -392,6 +437,23 @@ footer i{
         max-width: 1440px;
         margin:0 auto;
     }
+.project-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+.project-card{
+    width:600px;
+    display:flex;
+    flex-direction: column;
+    /* border: 0.1px solid var(--black); */
+    border-radius: 24px;
+    box-shadow: 0px 0px 8px rgba(0,48,73,1);
+    gap:64px;
+
+}
+}
 
 
 @media (min-width:1920px){
@@ -404,5 +466,4 @@ footer i{
         max-width: 1920px;
         margin:0 auto;
     }
-}
 }
