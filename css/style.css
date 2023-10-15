@@ -19,7 +19,7 @@ html,
 body {
     font-size: var(--responsive-fonts);
     width: 100%;
-    /* overflow: hidden; */
+    scroll-behavior: smooth;
 
 }
 body {
@@ -268,6 +268,9 @@ nav a:hover{
     gap:64px;
 
 }
+.project-card:hover{
+    border: 1px solid var(--bittersweet);
+}
 .project-card-image-container img{
     width:100%;
     border-radius: 24px 24px 0 0 ;
@@ -276,6 +279,7 @@ nav a:hover{
 }
 
 .project-card-text{
+    padding: 0 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -287,6 +291,7 @@ nav a:hover{
     display:flex;
     flex-direction: column;
     gap:16px;
+    padding-bottom:16px;
 }
 .links a{
     color: var(--persian-green);
@@ -386,7 +391,7 @@ footer i{
 
 
     .personal-info{
-        background-color: var(--persian-green);
+        background-color: var(--white);
         position:absolute;
         max-width: 80%;
         display:flex;
